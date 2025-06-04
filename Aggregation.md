@@ -84,19 +84,19 @@ db.aggregate() — another method you can use
 Each stage can be repeated in the pipeline except for $out, $merge, and $geoNear, which can only be used once.
 
 ## The 7 Most Common Aggregation Stages:  
--$project  
+- $project  
 Transforms documents by adding or removing fields to prepare them for the next stage.
 
--$match  
+- $match  
 Filters documents according to specific conditions. This and the $project stage are the most performance-impacting stages.
 
--$group  
+- $group  
 Groups documents using a unique identifier and applies aggregation functions to each group.
 
 - $sort  
 Sorts the documents received from the previous stage and passes them unchanged to the next.
 
--$skip  
+- $skip  
 Skips the first n documents as needed and forwards the rest unchanged.
 
 - $limit  
